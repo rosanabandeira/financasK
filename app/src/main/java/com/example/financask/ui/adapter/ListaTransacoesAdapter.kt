@@ -15,11 +15,11 @@ class ListaTransacoesAdapter(transacoes: List<Transacao>, context: Context) : Ba
     private val context = context
 
     override fun getView(position: Int, view: View?, parent: ViewGroup?): View {
-        val viewCriada: View = LayoutInflater.from(context).inflate(R.layout.transacao_item, parent, false)
+        val viewCriada = LayoutInflater.from(context).inflate(R.layout.transacao_item, parent, false)
 
         val transacao = transacoes[position]
 
-        viewCriada.transacao_valor.setText(transacao.getValor().toString())
+        viewCriada.transacao_valor.setText(transacao.valor.toString())
 
 
         return viewCriada
