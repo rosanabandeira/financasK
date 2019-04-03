@@ -7,7 +7,8 @@ class Transacao(
     val valor: BigDecimal,
     val categoria: String = "Indefinida",
     val tipo: Tipo,
-    val data: Calendar = Calendar.getInstance())
+    val data: Calendar = Calendar.getInstance()
+)
 
 
 
