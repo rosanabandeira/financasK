@@ -67,9 +67,9 @@ class ListaTransacoesAdapter(
 
     private fun corPor(tipo: Tipo): Int {
         if (tipo == Tipo.RECEITA) {
-            return (ContextCompat.getColor(context, R.color.receita))
+            return ContextCompat.getColor(context, R.color.receita)
         }
-        return (ContextCompat.getColor(context, R.color.despesa))
+        return ContextCompat.getColor(context, R.color.despesa)
     }
 
 
